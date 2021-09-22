@@ -1,0 +1,56 @@
+<!-- /* from {
+    width:200px;
+}
+to{
+    width:500px;
+} */
+/* jika lebih dari 2 konsisi */ -->
+<!-- property animation
+[name] [duration] [timing-function] [delay] [iteration_count] [direction] [fill-mode] [play-state]
+-->
+<!-- DIRECTION normal | reverse |alternate |alternate-reverse-->
+<!-- fill-mode none | forwards |backwards|both -->
+<!-- play-state running | paused -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+        .kotak{
+            width:200px;
+            height:200px;
+            background-color:salmon;
+            /* transition */
+            /* transition:2s ease all; */
+
+            animation:animasiKotak 2s ease 2 alternate;
+        }
+        .kotak:hover{
+            /* width:500px; */
+            /* menggunakan animasi */
+        }
+        
+        @keyframes animasiKotak {
+            0% {
+                width:200px;
+            }
+
+            50%{
+                width:500px;
+                height:200px;
+            }
+
+            100%{
+                width:500px;
+                height:500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

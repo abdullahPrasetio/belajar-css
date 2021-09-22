@@ -1,0 +1,7 @@
+grid container => elemnt pembungkus grid display:grid;
+grid item => element child dari container
+grid line => gari horizontal atau vertikal yang memisahkan grid menjadi beberapa bagian ditandai dengan angka
+grid cell=> cell atau item/ perpotongan antara baris dan kolom
+grid area=> kumpulan lebih dari 1 cell yang membentuk sebuah kotak
+grid track=> ukuran/jarak antara 2 grid line atau ukuran cell secara horizontal / vertikal
+grid gap=>Jarak antara cell

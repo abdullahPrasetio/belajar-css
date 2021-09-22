@@ -1,0 +1,23 @@
+/* font-family mengatur jenis font yang akan digunakan */
+/* font-size mengatur ukuran font */
+/* font-weight mengatur ketebalan font lighter normal 100-900 bold bolder */ 
+/* font-variant mengubah font jadi small caps */
+/* font-style mengubah style font misal italic normal oblique  */
+/* line-height mengatur spasi antar baris normal px em */
+/* jadikan satu property font */
+/* body {
+    font: italic normal bold 16px/18px helvetica,arial,sans-serif;
+    font-style font-variant font-weight font-size line-height font-family   
+}*/
+h1{
+    font-family: arial,sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+p{
+    font-family: georgia,sans-serif;
+    line-height: 1.5em;
+}

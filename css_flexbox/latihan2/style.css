@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    background-color: rgb(180,78,232);
+    justify-content:space-around;
+    /* padding:20px 0; */
+    /* Menggunakan flex */
+    height:50px;
+    align-items:center;
+    color: rgb(236, 222, 243);
+}
+
+nav .logo{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    display:flex;
+    width:40%;
+    justify-content:space-between;
+}
+
+nav ul li a{
+    color: rgb(230, 203, 243);
+    text-decoration: none;
+    font-size: .8em;
+}
+
+nav ul li a:hover{
+    color: rgb(242, 234, 247);
+}
+
+/* Hamburger Menu */
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    height:20px;
+    justify-content:space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width:50px;
+    height:28px;
+    opacity:0;
+    left:-15px;
+    top: -8px;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display:block;
+    width:28px;
+    height:3px;
+    background-color: rgb(230, 203, 243);
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+/* Hamburger menu animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color:white;
+    transform:rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color:white;
+    transform:rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+/* Responsive breakpoints */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width:50%
+    }
+}
+
+/* ukuran tablet */
+@media screen and (max-width: 576px) {
+    nav ul {
+        /* display:none; */
+        position:absolute;
+        right:0; 
+        top:0;
+        width:80%;
+        height:100vh;
+        align-items:center;
+        justify-content:space-evenly;
+        flex-direction:column;
+        background-color: rgb(189, 97, 235);
+        z-index: -1;
+        transform:translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav ul.slide{
+        opacity: 1;
+        transform:translateX(0);
+    }
+    nav ul li {
+        text-align:center;
+        height:200px;
+        width:100%;
+        /* background-color: rgb(161, 52, 216); */
+        display:flex;
+    }
+    nav ul li a{
+        margin:auto;
+    }
+    nav ul li:hover{
+        background-color: rgb(161, 52, 216);
+    }
+    .menu-toggle{
+        display:flex;
+    }
+}

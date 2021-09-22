@@ -1,0 +1,48 @@
+<!-- static merupakan position default setiap element pada html -->
+<!-- relative => jika menggunakan relative maka element bisa digeser tapi tidak mempengaruhi posisi element di sekitarnya dan juga  relative tehadap posisi sebelumnya-->
+<!-- absolute => jika menggunakan position relative maka element bisa digeser namun mempengaruhi element disekitarnya ,karena posisi yang ditinggalnya akan dianggap tidak ada , posisinya relative terhadap parentnya -->
+<!-- Fixed=> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Position</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            margin:auto;
+        }
+        .satu{
+            background-color: limegreen;
+        }
+        .dua{
+            background-color: violet;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .tiga{
+            background-color: yellow;
+        }
+        .container{
+            width:600px;
+            height: 650px;
+            border: 10px solid green;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+    </div>
+</body>
+</html>

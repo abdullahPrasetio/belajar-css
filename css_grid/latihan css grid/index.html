@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">TemanCoder Merch Shop</h2>
+                <p class="sub-heading">Hoodie & T-Shirt</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 250k</h4>
+                <p class="item">Hoodie</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 150k</h4>
+                <p class="item">T-Shirt</p>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>TemanCoder Merch</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+        <section class="services">
+            <div class="service">
+                <div class="icon">💻</div>
+                <h3>Tutorial</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere provident doloremque sequi aspernatur vero quia maiores quod corporis, error, nihil fugiat dolorum? Ratione cupiditate vero aliquid possimus debitis laborum?
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">🎓</div>
+                <h3>Online Course</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere provident doloremque sequi aspernatur vero quia maiores quod corporis, error, nihil fugiat dolorum? Ratione cupiditate vero aliquid possimus debitis laborum?
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">🎙</div>
+                <h3>Podcast</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere provident doloremque sequi aspernatur vero quia maiores quod corporis, error, nihil fugiat dolorum? Ratione cupiditate vero aliquid possimus debitis laborum?
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">👕</div>
+                <h3>Merchandise</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere provident doloremque sequi aspernatur vero quia maiores quod corporis, error, nihil fugiat dolorum? Ratione cupiditate vero aliquid possimus debitis laborum?
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt=""><img src="https://source.unsplash.com/random/202x202" alt=""><img src="https://source.unsplash.com/random/203x203" alt=""><img src="https://source.unsplash.com/random/204x204" alt=""><img src="https://source.unsplash.com/random/205x205" alt=""><img src="https://source.unsplash.com/random/206x206" alt=""><img src="https://source.unsplash.com/random/207x207" alt=""><img src="https://source.unsplash.com/random/208x208" alt=""><img src="https://source.unsplash.com/random/209x209" alt=""><img src="https://source.unsplash.com/random/2010x2010" alt="">
+        </section>
+    </div>
+    <script>
+        const openNav = document.querySelector(".menu-toggle input[type='checkbox']");
+        const ul = document.querySelector("nav ul");
+        openNav.addEventListener("click", function (e) {
+        ul.classList.toggle("slide");
+        });
+
+    </script>
+</body>
+</html>

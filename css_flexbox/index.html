@@ -1,0 +1,69 @@
+<!-- Container -->
+<!-- property
+    -display: flex;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flex</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 100px;
+            border: 5px solid black;
+            margin: 30px auto;
+            padding:5px;
+            box-sizing: border-box;
+            /* properti container flex */
+            display:flex;
+            /* flex-direction: row | row-reverse | column | column-reverse  */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap : nowrap | wrap | wrap-reverse */
+            flex-wrap: wrap;
+            /* horizontal */
+            /* justify-content : flex-start | flex-end | center | space-between |space-around | space-evenly*/
+            /* justify-content: space-evenly; */
+            /* vertikal */
+            /* align-items : flex-start | flex-end | center | stretch | baseline */
+            align-items: flex-start ;
+            /* vertical */
+            /* align-content: flex-start | flex-end | center | stretch | space-between |space-around  */
+            /* align-content: space-around; */
+        }
+
+        .container div{
+            /* width: 100px;
+            height: 100px; */
+            background-color:red;
+            text-align: center;
+            /* line-height:100px; */
+            margin: 2px;
+            flex:1;
+        }
+        /* .container div.satu{
+            order: 3;
+        } */
+        .container div.dua{
+            /* Untuk mengatur order paling besar maka di kanan */
+            flex: 2;
+            /* align-self: auto | flex-start | flex-end | center | stretch | baseline ; */
+            align-self: baseline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+        <div class="tujuh">7</div>
+    </div>
+</body>
+</html>

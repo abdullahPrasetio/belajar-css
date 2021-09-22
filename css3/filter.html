@@ -1,0 +1,52 @@
+<!-- 
+    blur,
+    brightness,
+    contrast,
+    saturate,
+    grayscale,
+    sepia,
+    hue-rotate,
+    invert,
+    opacity,
+    drop-shadow
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Filter</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        /* 
+            blur(px)
+            brightness(angka | %)
+            contrast(angka | %)
+            saturate(angka | %)
+            grayscale(angka | %)
+            sepia(angka | %)
+            hue-rotate(deg)
+            invert(angka | %)
+            opacity(angka | %)
+            drop-shadow(sama seperti box shadow)
+        */
+        img{
+            width: 600px;
+            /* filter:blur(5px); */
+            /* filter:brightness(110%); */
+            /* filter:contrast(150%); */
+            /* filter:saturate(15%); */
+            /* filter:grayscale(100%);
+            filter:sepia(100%); */
+            filter:hue-rotate(100deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="img/hero.jpg" alt="Hero image">
+</body>
+</html>

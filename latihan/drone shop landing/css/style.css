@@ -1,0 +1,366 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Mulai css saya */
+body{
+    font-family: 'Rubik', sans-serif;
+    color:#0A1329;
+    background-color:#F3F5FC;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: #0A1329;
+}
+
+
+.text-regular{
+    color:rgba(10, 19, 41, .55);
+    font-weight: 400;
+    line-height:36px;
+}
+
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+
+nav{
+    height:53px;
+    margin: 45px auto;
+    /* padding: 20px 0; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    display:flex;
+    align-items: center;
+}
+
+nav .logo img{
+    width:59px;
+    height:27px;
+    margin-right:16px ;
+}
+
+nav ul{
+    display: flex;
+    flex: 2;
+    justify-content: space-evenly;
+    /* background-color: #0A1329; */
+}
+
+.nav-link{
+    font: 18px;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius:10px;
+}
+
+nav li a:hover,.button-login:hover{
+    background-color: #315BC7;
+    color: #fafafa;
+}
+
+nav .nav-button{
+    flex:1;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-login{
+    color: #315BC7;
+    border-radius: 50px;
+    padding:16px 32px;
+}
+
+.button-cta{
+    background-color: #315BC7;
+    color: #fafafa;
+    border-radius: 50px;
+    padding:16px 32px;
+}
+
+.button-cta:hover{
+    background-color: #4f75d4;
+}
+
+.hero-section{
+    margin-top: 138px;
+    width: 100%;
+}
+
+.tag-discount{
+    width:200px;
+    padding:8.5px 16px;
+    background-color:#FFEBEE;
+    border-radius:50px;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:16px;
+    color:#F44336;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.tag-discount img{
+    width:20px;
+    height:20px;
+}
+.hero-section{
+    display:flex;
+}
+.hero-section h1{
+    font-size: 66px;
+    font-weight: bold;
+    line-height:86px;
+    margin-bottom:26px;
+}
+
+.hero-section p{
+    margin-bottom:52px;
+}
+.hero-right img{
+    width:821px;
+    height:447px;
+    position: relative;
+    right: -50px;
+}
+
+.content-header{
+    height: 710px;
+    width: 100%;
+    display: flex;
+    margin-top: 170px;
+}
+
+.overlay{
+    background-color: #000;
+    width: 100%;
+    height: 710px;
+    opacity: .3;
+    position:absolute;
+}
+.content-header h3{
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.content-header p{
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 130px;
+    line-height:50px;
+}
+
+.content-header span{
+    font-weight: bold;
+}
+.content-header-left{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/content1.png);
+    background-size: cover;
+}
+
+
+.content-header-right{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/content2.png);
+    background-size: cover;
+}
+
+section.content-description{
+    height: 791px;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.subtitle{
+    font-size: 24px;
+    color:rgba(10, 19, 41, .55);
+    text-align: center;
+}
+.benefit-section{
+    height: 791px;
+}
+.benefit-section-description h3{
+    margin-top:100px;
+    margin-bottom: 31px;
+}
+.benefit-section-description p{
+    line-height:44px;
+}
+
+.benefits{
+    width:718px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.benefit{
+    width: 150px;
+    margin-bottom: 303px;
+}
+.benefit h4{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.benefit p{
+    font-size: 20px;
+    line-height:auto;
+    color:rgba(10, 19, 41, .55);
+    text-align: center;
+    line-height:30px;
+}
+
+
+.benefit-section img{
+    width: 468px;
+    height: 476px;
+    margin: -150px auto 0;
+    display: block;
+    position: relative;
+}
+.video-section{
+    background-color: #FFFFFF;
+}
+.video-section div:nth-child(1){
+    height: 236px;
+    background-color: #FFFFFF;
+}
+
+.video-section h3{
+    margin-top: 119px;
+}
+
+.video-section video{
+    width: 1170px;
+    height: 658px;
+}
+.new-product-section{
+    padding-top: 128px;
+    background-color: #FFFFFF;
+}
+.new-product-section .title{
+    
+    margin-bottom: 31px;
+}
+.new-product-section p{
+    font-size:22px;
+    line-height:34px;
+}
+.products{
+    margin-top: 88px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.card-product{
+    width:470px;
+    padding:30px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 20px;
+}
+.card-product:hover{
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,.15);
+}
+
+.card-title-product{
+    font-size:30px;
+    font-weight:600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card-price-product{
+    font-size:32px;
+    font-weight:600;
+    margin-bottom: 20px;
+}
+.card-description-product{
+    font-size:20px;
+    font-weight:300;
+    margin-bottom: 30px;
+    color:rgba(10, 19, 41, .55);
+}
+
+.button-card{
+    padding:18px 45px;
+    background-color:#315BC7;
+    color: #fafafa;
+    border-radius: 50px;
+}
+
+.img-card-product{
+    width: 410px;
+    height:240px;
+    border-radius:10px;
+}
+/*  */
